@@ -1,4 +1,4 @@
-export const AddTournamentPage = () => {
+export default function AddTournamentPage() {
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
         // Add logic to handle form submission here
