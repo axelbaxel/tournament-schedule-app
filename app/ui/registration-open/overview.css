@@ -1,0 +1,9 @@
+.container {
+  width: 45%; /* fallback for desktop */
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* mobile */
+  }
+}

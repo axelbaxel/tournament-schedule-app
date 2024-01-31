@@ -1,0 +1,11 @@
+.container {
+  width: 45%; /* fallback for desktop */
+  border: 1px solid #8d8d8d;
+  max-height: 400px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* mobile */
+  }
+}
