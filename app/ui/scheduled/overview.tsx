@@ -1,11 +1,13 @@
 import React from 'react';
 import './overview.css';
 import Table from './table';
+import { fetchScheduledTournaments } from '@/app/lib/data';
 
-const ScheduleOverview: React.FC = () => {
+const ScheduleOverview: React.FC = async () => {
+    const scheduledTournaments = await fetchScheduledTournaments()
     return (
         <div className="container">
-            <Table />
+            <Table tournaments={scheduledTournaments} />
         </div>
     );
 };

@@ -8,13 +8,12 @@ export const RegistrationForm = () => {
 
     return (
         <>
-            <h1>Add Tournament</h1>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="name">Name:</label>
                 <input type="text" id="name" name="name" />
 
-                <label htmlFor="date">Date:</label>
-                <input type="date" id="date" name="date" />
+                <label htmlFor="date">Date and Time:</label>
+                <input type="datetime-local" id="date" name="date" />
 
                 <label htmlFor="location">Location:</label>
                 <input type="text" id="location" name="location" />
